@@ -1,5 +1,5 @@
 import socket
-from options import p1,p2
+from options import p1, p2
 
 HOST="127.0.0.1"
 PORT=65432

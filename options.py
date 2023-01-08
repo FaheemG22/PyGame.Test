@@ -9,6 +9,7 @@ class settings:
     vel = 8
 
     keys = "a"
+    initial = True
 
 class p1:
     x = 0 + settings.radius

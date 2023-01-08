@@ -22,8 +22,7 @@ class game:
                     Thread(target=strings1).start()
                     Thread(target=strings2).start()
                     settings.initial = False
-
-                win.fill(settings.background)
+                self.display()
 
         except:
             print("Game Quit")
@@ -39,3 +38,5 @@ class game:
         pygame.draw.circle(self.win, p1.colour, p1.coordinate, settings.radius)
         pygame.draw.circle(self.win, p2.colour, p2.coordinate, settings.radius)
         pygame.display.update()
+        self.win.fill(settings.background)
+game()

@@ -24,4 +24,3 @@ class p2:
 
     colour = (0, 0, 255)
     string = False
-

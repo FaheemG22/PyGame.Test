@@ -4,9 +4,7 @@ print(socket.gethostbyname(socket.gethostname()))
 
 def serv():
     HOST = "127.0.0.1"                                                                                                  # Standard loopback interface address (localhost)
-    PORT = 65432                                                                                                        # Port to listen on (non-privileged ports are > 1023)
-    colour = ['unique', 'red', 'amber', 'green', 'leave']
-    all_colour = []                                                                                                     # creates list for the client to chose from and record their options
+    PORT = 65432                                                                                                        # Port to listen on (non-privileged ports are > 1023)                                                                               # creates list for the client to chose from and record their options
     while True:
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:                                                    # does some sort of divine magic that I have no clue about
             s.bind((HOST, PORT))
@@ -18,5 +16,6 @@ def serv():
                 choice = conn.recv(1024)                                                                                # receives a bit of data ie 0s 1s
                 conn.close()
                 chosen = int(choice.decode().strip("b"))
+                print(chosen)
 
 serv()

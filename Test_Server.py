@@ -1,6 +1,6 @@
 import socket
 
-print(socket.gethostbyname(socket.gethostname()))#192.168.1.40
+print(socket.gethostbyname(socket.gethostname()))
 
 def serv():
     HOST = "127.0.0.1"                                                                                                  # Standard loopback interface address (localhost)

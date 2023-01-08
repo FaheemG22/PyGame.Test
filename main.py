@@ -1,5 +1,6 @@
 from movement import *
 import pygame
+from threading import Thread
 
 def runtime():
     try:

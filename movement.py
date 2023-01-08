@@ -1,8 +1,7 @@
 import pygame
 from options import *
-from threading import Thread
 import time
-import keyboard
+
 
 def player1():
     # player 1
